@@ -1,5 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Router Sandbox</h1>
+    <h2>Léland Shirley</h2>
   </div>
 </template>
