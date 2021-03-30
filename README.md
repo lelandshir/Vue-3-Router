@@ -36,3 +36,23 @@ The go method with a positive or negative integer
 ```
 this.$router.go(1);
 ```
+
+### JSON Server
+
+- Simply exemplary as it's typical we get data from some API endpoint
+
+```
+mkdir data
+touch db.json
+npm i -g json-server
+json-server --watch data/db.json
+http://localhost:3000/jobs
+```
+
+### Working with Data/Waiting for Data
+
+- Fetch/Promises, maybe use Axios?
+- Render conditionally - good practice
+- A popular place to get data is in the mounted lifecycle hook
+- `Common Error:` Cannot find .whatver of null; because we don't have a value for the data reference until the mounted lifecycle hook has completed it's fetch request
+- Use `v-if` directive and nest the elements responsible for rendering the data
